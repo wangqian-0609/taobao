@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<i class="mui-icon mui-icon-arrowleft"></i>
+				<input type="text" placeholder="搜索内容">
+				<i class="mui-icon mui-icon-arrowright"></i>
+			</div>
+			<div class="main">
+				<div class="nav">
+					<span class="active" data-id="0">综合</span>
+					<span data-id="1">销量</span>
+				</div>
+				<div class="content" id="scroll">
+					<div class="scrollBox">
+						<div class="box" id="conBox">
+						<div>
+							<!-- <dl>
+								<dt><img src="images/diro2.jpg" alt=""></dt>
+								<dd>
+									<p>发动机是否三点好的</p>
+									<p >销量</p>
+									<p>北京</p>
+								</dd>
+							</dl> -->
+						</div>
+						<div>
+							
+						</div>
+					</div>
+					<p class="pullUp">上拉加载</p>
+					</div>
+					
+				</div>
+			</div>
+			<div class="footer">
+				
+			</div>
+		</div>
+		<script src="js/libs/require.js"></script>
+		<script >
+		require(['js/main'],function(){
+				require(["index"])
+			})
+		</script>
+	</body>
+
+</html>

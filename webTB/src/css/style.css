@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .wrapper .header {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .wrapper .header i {
+      width: 44px;
+      height: 44px;
+      text-align: center;
+      line-height: 44px; }
+    .wrapper .header input {
+      flex: 1;
+      heigth: 30px;
+      margin: 0 auto;
+      background: #ccc;
+      padding: 0 20px; }
+  .wrapper .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column; }
+    .wrapper .main .nav {
+      height: 40px;
+      line-height: 40px;
+      display: flex;
+      flex-direction: row; }
+      .wrapper .main .nav span {
+        flex: 1;
+        text-align: center; }
+      .wrapper .main .nav .active {
+        border-bottom: 2px solid red; }
+    .wrapper .main #scroll {
+      flex: 1;
+      overflow: hidden; }
+      .wrapper .main #scroll #conBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        .wrapper .main #scroll #conBox div {
+          width: 48%; }
+          .wrapper .main #scroll #conBox div dl {
+            background: #ccc; }
+          .wrapper .main #scroll #conBox div dt {
+            width: 100%;
+            text-align: center; }
+            .wrapper .main #scroll #conBox div dt img {
+              width: 100%; }
+          .wrapper .main #scroll #conBox div dd {
+            width: 100%;
+            text-align: center; }
+  .wrapper .pullUp {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: blue; }
+  .wrapper .footer {
+    width: 100%;
+    height: 50px; }

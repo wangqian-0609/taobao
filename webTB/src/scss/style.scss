@@ -1,0 +1,96 @@
+*{
+	padding:0;
+	margin:0;
+	list-style: none;
+	box-sizing: border-box;
+}
+html,body{
+	width:100%;
+	height:100%;
+}
+@mixin flex($d:column){
+	display:flex;
+	flex-direction:$d;
+}
+@mixin pos($p:relative){
+	position:$p;
+}
+.wrapper{
+	width:100%;
+	height:100%;
+	@include flex;
+	.header{
+		width:100%;
+		height:44px;
+		@include flex(row);
+		align-items:center;
+		i{
+			width:44px;
+			height:44px;
+			text-align:center;
+			line-height:44px;
+		}
+		input{
+			flex:1;
+			heigth:30px;
+			margin:0 auto;
+			background:#ccc;
+			padding:0 20px;
+		}
+	}
+	.main{
+		flex:1;
+		@include flex;
+		.nav{
+			height:40px;
+			line-height: 40px;
+			@include flex(row);
+			span{
+				flex:1;
+				text-align: center;
+			}
+			.active{
+				border-bottom:2px solid red;
+			}
+		}
+		#scroll{
+			flex:1;
+			overflow: hidden;
+			#conBox{
+				@include flex(row);
+				justify-content: space-between;
+				div{
+					width:48%;
+					dl{
+						background: #ccc;
+					}
+					dt{
+						width:100%;
+						text-align: center;
+						img{
+							width:100%;
+						}	
+					}
+					dd{
+						width:100%;
+						text-align: center;
+					}
+				}
+			}
+			
+			
+		}
+	}
+	.pullUp{
+		width:100%;
+		height:40px;
+		line-height: 40px;
+		text-align: center;
+		background: blue;
+	}
+	.footer{
+		width:100%;
+		height:50px;
+	}
+}
+	
